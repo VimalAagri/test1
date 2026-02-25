@@ -378,34 +378,149 @@ color:black;
 }
 
 /* =========================
-PROJECT SECTION MOBILE JITTER FIX
+MOBILE PROJECT SECTION REDESIGN
 ========================= */
 
 @media (max-width:768px){
 
-  .projects-section{
-    
-    /* reduce blur for mobile */
-    backdrop-filter: blur(8px);
-    
-    /* force GPU layer */
-    transform: translateZ(0);
-    will-change: transform;
+  /* wrapper spacing */
+
+  .projects-wrapper{
+
+    padding:60px 15px;
+    align-items:flex-start;
 
   }
 
+
+  /* main container */
+
+  .projects-section{
+
+    padding:25px 15px;
+
+    border-radius:15px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:0 0 20px rgba(0,255,255,0.15);
+
+  }
+
+
+  /* stack layout vertically */
+
   .project-row{
 
-    transform: translateZ(0);
-    will-change: transform;
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+    transform:none;
+
+  }
+
+
+  /* remove hover animation on mobile */
+
+  .project-row:hover{
+
+    transform:none;
+
+    box-shadow:0 0 20px rgba(0,255,255,0.1);
+
+  }
+
+
+  /* responsive video */
+
+  .project-video{
+
+    width:100%;
+
+    border-radius:10px;
+
+    overflow:hidden;
 
   }
 
   .project-video iframe{
 
     width:100%;
+
     height:auto;
+
     aspect-ratio:16/9;
+
+    border-radius:10px;
+
+  }
+
+
+  /* project info */
+
+  .project-info h3{
+
+    font-size:1.2rem;
+
+    line-height:1.4;
+
+  }
+
+  .project-info p{
+
+    font-size:14px;
+
+    line-height:1.6;
+
+  }
+
+
+  /* features list */
+
+  .project-features li{
+
+    font-size:13px;
+
+  }
+
+
+  /* buttons */
+
+  .project-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+  }
+
+  .project-links a{
+
+    padding:6px 14px;
+
+    font-size:13px;
+
+  }
+
+
+  /* section title */
+
+  .projects-section .section-title{
+
+    font-size:1.8rem;
+
+    margin-bottom:30px;
 
   }
 
