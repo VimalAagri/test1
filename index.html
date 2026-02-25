@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO Title -->
+<title>Vimal Aagri | Full Stack Developer | MCA AIML Graduate </title>
+
+<!-- SEO Description -->
+<meta name="description" content="Official portfolio of Vimal Aagri, a Full Stack Web Developer skilled in Django, JavaScript, PHP, MySQL, and Android Development. MCA graduate specializing in Artificial Intelligence and Machine Learning. Explore projects, skills, and software development work.">
+
+<!-- SEO Keywords -->
+<meta name="keywords" content="
+Vimal Aagri,
+Vimal Aagri portfolio,
+Full Stack Developer portfolio,
+Web Developer portfolio,
+Django Developer portfolio,
+PHP Developer portfolio,
+JavaScript Developer portfolio,
+Software Developer portfolio,
+MCA AIML Developer
+">
+
+<meta name="author" content="Vimal Aagri">
+
+<meta name="robots" content="index, follow">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph (LinkedIn, WhatsApp, etc.) -->
+<meta property="og:title" content="Vimal Aagri | Full Stack Developer Portfolio">
+
+<meta property="og:description" content="Full Stack Developer skilled in Django, JavaScript, PHP, MySQL, and modern web technologies. MCA AIML graduate.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://vimalaagri.in">
+
+<meta property="og:image" content="https://vimalaagri.in/preview.png">
+
+<!-- Twitter Preview -->
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Vimal Aagri | Full Stack Developer">
+
+<meta name="twitter:description" content="Full Stack Developer portfolio showcasing web development projects and software skills.">
+
+<meta name="twitter:image" content="https://vimalaagri.in/preview.png">
+
+
+<link rel="icon" type="image/png" href="original.jpg">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<link rel="stylesheet" href="index.css">
+
+
+
+</head>
+<body>
+
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="trail"></div>
+
+<canvas id="canvas"></canvas>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+<!-- Logo -->
+<div class="flex items-center">
+  <img 
+    src="original.jpg" 
+    alt="Logo"
+    class="w-10 h-10 rounded-full border-2 border-cyan-400 object-cover"
+  >
+</div>
+
+
+<!-- Desktop Menu -->
+
+<div class="hidden md:flex space-x-8 items-center">
+
+<a href="#" class="hover:text-cyan-400">Home</a>
+<a href="#about" class="hover:text-cyan-400">About</a>
+<a href="#skills" class="hover:text-cyan-400">Skills</a>
+<a href="#projects" class="hover:text-cyan-400">Projects</a>
+<a href="#contact" class="hover:text-cyan-400">Contact</a>
+
+<a href="Vimal_Aagri_Resume.pdf"
+target="_blank"
+class="px-4 py-2 border border-cyan-400 rounded-lg  hover:bg-cyan-400 hover:text-white transition">
+
+View Resume
+
+</a>
+
+</div>
+
+
+<!-- Toggle Button -->
+
+<button id="menuBtn"
+class="md:hidden text-cyan-400 text-3xl focus:outline-none">
+
+☰
+
+</button>
+
+</div>
+
+
+<!-- Mobile Menu -->
+
+<div id="mobileMenu"
+class="hidden md:hidden flex flex-col items-center space-y-6 pb-6 bg-black/90 backdrop-blur-lg">
+
+<a href="#" class="hover:text-cyan-400">Home</a>
+<a href="#about" class="hover:text-cyan-400">About</a>
+<a href="#skills" class="hover:text-cyan-400">Skills</a>
+<a href="#projects" class="hover:text-cyan-400">Projects</a>
+<a href="#contact" class="hover:text-cyan-400">Contact</a>
+
+<a href="Vimal_Aagri_Resume.pdf"
+target="_blank"
+class="px-4 py-2 border border-cyan-400 rounded-lg">
+
+View Resume
+
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- HERO -->
+
+<section class="section">
+
+<div class="text-center">
+
+<h1 class="hero-title">VIMAL AAGRI</h1>
+
+<div class="text-2xl text-white-400 mt-4">
+<span id="typing"></span>
+</div>
+
+</div>
+
+</section>
+
+
+                                                       <!--About Section -->
+<section id="about" class="section">
+
+<div class="glass-card">
+
+<h2 class="about-title mb-6">
+About Me
+</h2>
+
+<p class="text-gray-300 text-lg leading-relaxed mb-6">
+
+I am an <span class="highlight">MCA graduate specializing in Artificial Intelligence and Machine Learning</span> with a strong passion for building intelligent, scalable, and real-world software systems. I focus on developing high-performance applications that combine <span class="highlight">AI, Machine Learning, and modern Full Stack technologies</span> to solve practical problems efficiently.
+
+</p>
+
+<p class="text-gray-400 leading-relaxed mb-6">
+
+My technical expertise includes <span class="highlight">Machine Learning model development, Full Stack Web Development, and Android Application Development</span>. I have hands-on experience working with technologies such as <span class="highlight">Python, Django, JavaScript, Kotlin, Firebase, MySQL, and modern frontend frameworks</span>. I am skilled in designing complete software solutions, from system architecture and backend development to frontend interfaces and deployment.
+
+</p>
+
+<p class="text-gray-400 leading-relaxed mb-6">
+
+I have developed several real-world projects, including a <span class="highlight">Machine Learning-based Student Performance Prediction System</span>, a <span class="highlight">cloud-based Android Notes Sharing Application</span>, and <span class="highlight">full stack web platforms and business websites</span>. These projects demonstrate my ability to apply Artificial Intelligence and software engineering principles to create practical, production-ready systems.
+
+</p>
+
+<p class="text-gray-400 leading-relaxed mb-6">
+
+I possess strong fundamentals in <span class="highlight">Data Structures and Algorithms, Database Management Systems, Operating Systems, and Computer Networks</span>, which enable me to build efficient and scalable software. I continuously work on improving my technical skills and expanding my expertise in Artificial Intelligence and advanced software engineering.
+
+</p>
+
+<p class="text-gray-400 leading-relaxed mb-6">
+
+My goal is to become a highly skilled <span class="highlight">AI Engineer and Software Developer</span>, contributing to the development of next-generation intelligent systems and innovative technologies that create meaningful real-world impact.
+
+</p>
+
+
+<div class="grid md:grid-cols-3 gap-6 mt-8">
+
+<div>
+<div class="text-cyan-400 text-xl font-bold">Education</div>
+<div class="text-gray-400">MCA – Artificial Intelligence & Machine Learning</div>
+</div>
+
+<div>
+<div class="text-cyan-400 text-xl font-bold">Core Expertise</div>
+<div class="text-gray-400">AI, Machine Learning, Full Stack Development</div>
+</div>
+
+<div>
+<div class="text-cyan-400 text-xl font-bold">Career Focus</div>
+<div class="text-gray-400">AI Engineering and Intelligent Software Systems</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+SKILLS SECTION (UPDATED & PRIORITY BASED)
+===================================================== -->
+
+<section class="section">
+
+<div class="skills-wrapper">
+
+<div class="skills-section">
+
+<canvas id="skillsCanvas"></canvas>
+
+<div class="skills-content">
+
+<div class="section-title">Skills & Technologies</div>
+
+
+<!-- Web Development (Highest priority for most dev roles) -->
+
+<div class="category">
+<div class="category-title">Web Development</div>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+<i class="devicon-html5-plain colored"></i>
+<span>HTML</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-css3-plain colored"></i>
+<span>CSS</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-javascript-plain colored"></i>
+<span>JavaScript</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-react-original colored"></i>
+<span>React</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-nodejs-plain colored"></i>
+<span>Node.js</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-bootstrap-plain colored"></i>
+<span>Bootstrap</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-tailwindcss-plain colored"></i>
+<span>Tailwind</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-php-plain colored"></i>
+<span>PHP</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-laravel-plain colored"></i>
+<span>Laravel</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-django-plain"></i>
+<span>Django</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-wordpress-plain"></i>
+<span>WordPress</span>
+</div>
+
+</div>
+</div>
+
+
+
+<!-- Programming Languages -->
+
+<div class="category">
+<div class="category-title">Programming Languages</div>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+<i class="devicon-c-plain"></i>
+<span>C</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-cplusplus-plain colored"></i>
+<span>C++</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-java-plain colored"></i>
+<span>Java</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-python-plain colored"></i>
+<span>Python</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-kotlin-plain colored"></i>
+<span>Kotlin</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-php-plain colored"></i>
+<span>PHP</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-javascript-plain colored"></i>
+<span>JavaScript</span>
+</div>
+
+</div>
+</div>
+
+
+
+<!-- Database -->
+
+<div class="category">
+<div class="category-title">Database</div>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+<i class="devicon-mysql-plain colored"></i>
+<span>MySQL</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-sqlite-plain colored"></i>
+<span>SQLite</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-firebase-plain colored"></i>
+<span>Firebase</span>
+</div>
+
+</div>
+</div>
+
+
+
+<!-- Android Development -->
+
+<div class="category">
+<div class="category-title">Android Development</div>
+
+<div class="skill-grid">
+
+    <div class="skill-card">
+<i class="devicon-androidstudio-plain colored"></i>
+<span>Android Studio</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-android-plain colored"></i>
+<span>Android</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-kotlin-plain colored"></i>
+<span>Kotlin</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-firebase-plain colored"></i>
+<span>Firebase</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-sqlite-plain colored"></i>
+<span>SQLite</span>
+</div>
+
+</div>
+</div>
+
+
+
+<!-- AI / Machine Learning -->
+
+<div class="category">
+<div class="category-title">Artificial Intelligence and Machine Learning</div>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" class="skill-icon" width="40px">
+<span>NumPy</span>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="skill-icon" width="40px">
+<span>Pandas</span>
+</div>
+
+<div class="skill-card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" class="skill-icon" width="40px">
+<span>Matplotlib</span>
+</div>
+
+<div class="skill-card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" class="skill-icon" width="40px">
+<span>Scikit-learn</span>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="skill-icon" width="40px">
+<span>TensorFlow</span>
+</div>
+
+</div>
+</div>
+
+
+
+<!-- Tools -->
+
+<div class="category">
+<div class="category-title">Tools & Platforms</div>
+
+<div class="skill-grid">
+
+<div class="skill-card">
+<i class="devicon-linux-plain"></i>
+<span>Linux</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-windows11-original colored"></i>
+<span>Windows</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-git-plain colored"></i>
+<span>Git</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-github-original"></i>
+<span>GitHub</span>
+</div>
+
+
+<div class="skill-card">
+<i class="devicon-figma-plain colored"></i>
+<span>Figma</span>
+</div>
+
+<div class="skill-card">
+<i class="devicon-canva-original colored"></i>
+<span>Canva</span>
+</div>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+</section>
+
+                                                    <!--Project Section -->
+<section class="section">
+
+<div class="projects-wrapper">
+
+<div class="projects-section">
+
+<canvas id="projectsCanvas"></canvas>
+
+<div class="projects-content">
+
+<div class="section-title">Work & Projects</div>
+
+<!-- Project 1 -->
+
+<div class="project-row">
+
+<div class="project-video">
+<iframe width="1382" height="492" src="https://www.youtube.com/embed/7NDRU0kFbGc" title="KJR Devbhoomi Global Services Pvt. Ltd. Official Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="project-info">
+
+<h3>KJR Devbhoomi Global Services Pvt. Ltd. Official Website</h3>
+
+<p>
+Professional business website developed using WordPress and deployed on global hosting server. Designed to represent business services, improve online presence, and provide seamless communication with clients.
+</p>
+
+<ul class="project-features">
+<li>• Fully responsive professional design</li>
+<li>• SEO optimized structure</li>
+<li>• Global hosting deployment</li>
+<li>• Contact and service management</li>
+</ul>
+
+<div class="project-links">
+<a href="https://devbhoomiglobalservices.com/">Live Website</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- Project 2 -->
+
+<div class="project-row">
+
+<div class="project-video">
+<iframe width="1382" height="492" src="https://www.youtube.com/embed/gSaqx3kItXg" title="Student Performance Analysis and Prediction System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="project-info">
+
+<h3>Student Performance Analysis and Prediction System</h3>
+
+<p>
+Machine Learning based web application that analyzes student academic data and predicts future performance using intelligent algorithms.
+</p>
+
+<ul class="project-features">
+<li>• Machine Learning prediction engine</li>
+<li>• Django backend system</li>
+<li>• Data visualization dashboard</li>
+<li>• Real-time performance analysis</li>
+</ul>
+
+<div class="project-links">
+<a href="https://github.com/VimalAagri/Student_Performance_Analysis_and_Prediction_System.git">GitHub</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- Project 3 -->
+
+<div class="project-row">
+
+<div class="project-video">
+<iframe width="1382" height="492" src="https://www.youtube.com/embed/2mZx5U4uFqk" title="UKCart (Uttarakhand&#39;s E-Commerce Website)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="project-info">
+
+<h3>UkCart Uttarakhand E-Commerce Platform</h3>
+
+<p>
+Full-stack e-commerce website developed to support local sellers in Uttarakhand by providing online marketplace functionality.
+</p>
+
+<ul class="project-features">
+<li>• Product listing and management</li>
+<li>• Shopping cart and order system</li>
+<li>• User authentication</li>
+<li>• Database integration</li>
+</ul>
+
+<div class="project-links">
+<a href="https://github.com/VimalAagri/UkCart.git">GitHub</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- Project 4 -->
+
+<div class="project-row">
+
+<div class="project-video">
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube-nocookie.com/embed/W0WbVnBpVP8"
+  title="Gym Website Frontend Design"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+</div>
+
+<div class="project-info">
+
+<h3>Gym Management Website</h3>
+
+<p>
+Dynamic web application built using Django framework to manage gym members, subscriptions, and admin controls.
+</p>
+
+<ul class="project-features">
+<li>• Member management system</li>
+<li>• Admin dashboard</li>
+<li>• Database integration</li>
+<li>• Responsive design</li>
+</ul>
+
+<div class="project-links">
+<a href="https://github.com/VimalAagri/GymManagementDjango">GitHub</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- Project 5 -->
+
+<div class="project-row">
+
+<div class="project-video">
+<iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
+</div>
+
+<div class="project-info">
+
+<h3>Student NotesHub Android Application</h3>
+
+<p>
+Android application built using Kotlin and Firebase allowing students to upload, share, and download academic notes.
+</p>
+
+<ul class="project-features">
+<li>• Firebase authentication</li>
+<li>• File upload and download</li>
+<li>• Student collaboration system</li>
+<li>• Real-time database</li>
+</ul>
+
+<div class="project-links">
+<a href="#">GitHub</a>
+<a href="#">APK Download</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- View More Button -->
+
+<div class="flex justify-center mt-10">
+
+<a 
+href="https://github.com/VimalAagri?tab=repositories"
+
+class="
+px-8 py-3
+text-cyan-400
+border border-cyan-400
+rounded-lg
+font-medium
+
+transition-all duration-300
+
+hover:bg-cyan-400
+hover:text-black
+hover:shadow-[0_0_15px_rgba(34,211,238,0.7)]
+hover:-translate-y-1
+"
+
+>
+
+Explore More Projects →
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="contact-section section">
+
+<div class="contact-container">
+
+<!-- LEFT SIDE CONTACT INFO -->
+
+<div class="contact-info">
+
+<h2 class="contact-title">
+Contact Me
+</h2>
+
+<p class="contact-description">
+Interested in working together, hiring me, or discussing a project?
+Feel free to contact me using the form or my contact details.
+</p>
+
+<div class="contact-details">
+
+<div class="contact-item">
+<div class="contact-label">Email</div>
+<div class="contact-value">vimalagari@gmail.com</div>
+</div>
+
+<div class="contact-item">
+<div class="contact-label">Phone</div>
+<div class="contact-value">+91 7902046797</div>
+</div>
+
+<div class="contact-item">
+<div class="contact-label">Availability</div>
+<div class="contact-value">Open for Jobs, Freelance, and Projects</div>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RIGHT SIDE CONTACT FORM -->
+
+<div class="contact-form-container">
+
+<form id="contactForm" class="contact-form">
+
+<input
+type="text"
+name="name"
+required
+placeholder="Your Name"
+class="contact-input"
+/>
+
+<input
+type="email"
+name="email"
+required
+placeholder="Your Email"
+class="contact-input"
+/>
+
+<input
+type="text"
+name="phone"
+placeholder="Your Phone"
+class="contact-input"
+/>
+
+<textarea
+name="message"
+required
+placeholder="Your Message"
+class="contact-textarea"
+></textarea>
+
+<button type="submit" class="contact-button">
+Send Message
+</button>
+
+<div id="formStatus" class="contact-status hidden">
+Message sent successfully!
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</section>                                                    
+
+
+<!-- Scroll To Top Button -->
+
+<button id="scrollTopBtn"
+
+class="fixed bottom-8 right-8 hidden px-4 py-3 rounded-full border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition duration-300">
+
+↑
+
+</button>
+
+<script src="index.js"></script>
+
+</body>
+</html>
