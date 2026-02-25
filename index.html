@@ -524,8 +524,8 @@ SKILLS SECTION (UPDATED & PRIORITY BASED)
 <div class="section-title">Work & Projects</div>
 
 <!-- Project 1 -->
-<a href="https://youtu.be/7NDRU0kFbGc?si=0p3IABG_dmO6i8fQ">
-<div class="project-row">
+
+<div class="project-row" onclick="window.open('https://youtu.be/7NDRU0kFbGc?si=0p3IABG_dmO6i8fQ', '_blank')">
 
 <div class="project-video">
     <div class="video-container">
@@ -556,11 +556,11 @@ Professional business website developed using WordPress and deployed on global h
 </div>
 
 </div>
-</a>
+
 
 <!-- Project 2 -->
-<a href="https://youtu.be/gSaqx3kItXg?si=LYPKMOazHyucuWMc">
-<div class="project-row">
+
+<div class="project-row" onclick="window.open('https://youtu.be/gSaqx3kItXg?si=LYPKMOazHyucuWMc', '_blank')">
 
 <div class="project-video">
         <div class="video-container">
@@ -590,11 +590,10 @@ Machine Learning based web application that analyzes student academic data and p
 </div>
 
 </div>
-</a>
+
 
 <!-- Project 3 -->
-<a href="https://youtu.be/2mZx5U4uFqk?si=3h3ie6YGOdY0ENW6">
-<div class="project-row">
+<div class="project-row"  onclick="window.open('https://youtu.be/2mZx5U4uFqk?si=3h3ie6YGOdY0ENW6', '_blank')">
 
 <div class="project-video">
         <div class="video-container">
@@ -624,11 +623,10 @@ Full-stack e-commerce website developed to support local sellers in Uttarakhand 
 </div>
 
 </div>
-</a>
+
 
 <!-- Project 4 -->
-<a href="https://youtu.be/W0WbVnBpVP8?si=e4epFRUw1ioL7zLJ">
-<div class="project-row">
+<div class="project-row"  onclick="window.open('https://youtu.be/W0WbVnBpVP8?si=e4epFRUw1ioL7zLJ', '_blank')">
 
 <div class="project-video">
         <div class="video-container">   
@@ -659,7 +657,7 @@ Dynamic web application built using Django framework to manage gym members, subs
 </div>
 
 </div>
-</a>
+
 
 <!-- Project 5 -->
 
@@ -697,13 +695,22 @@ Android application built using Kotlin and Firebase allowing students to upload,
 
 <!-- View More Button -->
 
-<div class="flex justify-center mt-10">
+<div class="flex justify-center mt-10 px-4">
 
 <a 
 href="https://github.com/VimalAagri?tab=repositories"
 
 class="
-px-8 py-3
+inline-block
+
+w-full sm:w-auto
+text-center
+
+px-6 sm:px-8
+py-3
+
+text-sm sm:text-base
+
 text-cyan-400
 border border-cyan-400
 rounded-lg
@@ -714,7 +721,8 @@ transition-all duration-300
 hover:bg-cyan-400
 hover:text-black
 hover:shadow-[0_0_15px_rgba(34,211,238,0.7)]
-hover:-translate-y-1
+
+active:scale-95
 "
 
 >
@@ -760,20 +768,43 @@ Feel free to contact me using the form or my contact details.
 
 <div class="contact-details">
 
-<div class="contact-item">
-<div class="contact-label">Email</div>
-<div class="contact-value">vimalagari@gmail.com</div>
-</div>
+  <div class="contact-item">
+    <div class="contact-label">Email</div>
+    <div class="contact-value">
+      <a href="mailto:vimalagari@gmail.com" class="contact-link">
+        vimalagari@gmail.com
+      </a>
+    </div>
+  </div>
 
-<div class="contact-item">
-<div class="contact-label">Phone</div>
-<div class="contact-value">+91 7902046797</div>
-</div>
+  <div class="contact-item">
+    <div class="contact-label">LinkedIn</div>
+    <div class="contact-value">
+      <a href="https://www.linkedin.com/in/vimal-aagri-81162123b" 
+         target="_blank" 
+         class="contact-link">
+        vimal-aagri-81162123b
+      </a>
+    </div>
+  </div>
 
-<div class="contact-item">
-<div class="contact-label">Availability</div>
-<div class="contact-value">Open for Jobs, Freelance, and Projects</div>
-</div>
+  <div class="contact-item">
+    <div class="contact-label">GitHub</div>
+    <div class="contact-value">
+      <a href="https://github.com/VimalAagri" 
+         target="_blank" 
+         class="contact-link">
+        github.com/VimalAagri
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <div class="contact-label">Availability</div>
+    <div class="contact-value">
+      Open for Full-Time Roles, Freelance, and Collaboration
+    </div>
+  </div>
 
 </div>
 
