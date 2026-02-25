@@ -340,6 +340,36 @@ animateProjects();
 
 }
 
+/* Remove projectsCanvas on mobile */
+
+if (window.innerWidth <= 768) {
+
+  const projectsCanvas = document.getElementById("projectsCanvas");
+
+  if (projectsCanvas) {
+    projectsCanvas.remove();
+  }
+
+}
+
+function handleProjectsCanvas(){
+
+  const projectsCanvas = document.getElementById("projectsCanvas");
+
+  if(window.innerWidth <= 768){
+
+    if(projectsCanvas){
+      projectsCanvas.remove();
+    }
+
+  }
+
+}
+
+handleProjectsCanvas();
+
+window.addEventListener("resize", handleProjectsCanvas);
+
 
 /* =====================================================
 CONTACT FORM
@@ -390,6 +420,7 @@ alert("Error sending message");
 });
 
 }
+
 
 /* =====================================================
 SCROLL TO TOP BUTTON
