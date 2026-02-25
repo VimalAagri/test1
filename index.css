@@ -377,6 +377,39 @@ background:#00ffff;
 color:black;
 }
 
+/* =========================
+PROJECT SECTION MOBILE JITTER FIX
+========================= */
+
+@media (max-width:768px){
+
+  .projects-section{
+    
+    /* reduce blur for mobile */
+    backdrop-filter: blur(8px);
+    
+    /* force GPU layer */
+    transform: translateZ(0);
+    will-change: transform;
+
+  }
+
+  .project-row{
+
+    transform: translateZ(0);
+    will-change: transform;
+
+  }
+
+  .project-video iframe{
+
+    width:100%;
+    height:auto;
+    aspect-ratio:16/9;
+
+  }
+
+}
 
 /* =========================
 CONTACT SECTION
