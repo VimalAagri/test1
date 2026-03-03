@@ -834,10 +834,17 @@ font-size:28px;
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
-  display: none; /* Hidden by default, shown on larger screens */
+  display: flex;
   flex-direction: column;
   gap: 25px;
   z-index: 1000;
+}
+
+/* Hide Sidebar on Mobile */
+@media (max-width: 768px) {
+  .social-sidebar {
+    display: none;
+  }
 }
 
 /* Icon Base */
