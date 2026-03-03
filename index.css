@@ -823,3 +823,71 @@ font-size:28px;
 }
 
 }
+
+
+
+
+
+/* Sidebar Container */
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 1000;
+}
+
+/* Icon Base */
+.social-sidebar .icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Neon Glow Colors */
+.email:hover {
+  box-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+  transform: scale(1.15);
+}
+
+.linkedin:hover {
+  box-shadow: 0 0 20px #0a66c2, 0 0 40px #0a66c2;
+  transform: scale(1.15);
+}
+
+.github:hover {
+  box-shadow: 0 0 20px #a855f7, 0 0 40px #a855f7;
+  transform: scale(1.15);
+}
+
+/* Hover Background Animation */
+.social-sidebar .icon::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(45deg, transparent, rgba(0,255,255,0.4), transparent);
+  transform: rotate(45deg);
+  top: -100%;
+  left: -100%;
+  transition: 0.5s;
+}
+
+.social-sidebar .icon:hover::before {
+  top: 100%;
+  left: 100%;
+}
