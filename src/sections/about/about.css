@@ -1,0 +1,196 @@
+/* =========================
+ABOUT SECTION STYLES
+========================= */
+
+#about {
+  position: relative;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 36px;
+  width: min(1080px, calc(100% - 32px));
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgba(125, 211, 252, 0.3), rgba(245, 158, 11, 0.22), transparent);
+}
+
+.glass-card {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  width: 100%;
+  max-width: 1220px;
+  padding: 64px 54px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.52));
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
+  transition: 0.4s;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.55fr);
+  column-gap: 44px;
+  align-items: start;
+}
+
+.glass-card:hover {
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  right: 34px;
+  width: 130px;
+  height: 130px;
+  border-radius: 28px;
+  border: 1px solid rgba(125, 211, 252, 0.16);
+  background:
+    linear-gradient(135deg, rgba(34,211,238,0.11), transparent),
+    rgba(2,6,23,0.26);
+  transform: rotate(10deg);
+  pointer-events: none;
+}
+
+.about-title {
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0;
+  background: linear-gradient(135deg, #fff, #7dd3fc 58%, #fde68a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#about .about-title,
+#about .section-eyebrow,
+#about .about-lead {
+  grid-column: 1 / -1;
+}
+
+.highlight {
+  color: #7dd3fc;
+  font-weight: 600;
+}
+
+.about-lead {
+  margin-bottom: 26px;
+  /* max-width: 850px; */
+  color: #e2e8f0;
+  font-size: 1.28rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.glass-card p {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+}
+
+#about .glass-card p {
+  max-width: none;
+  padding: 18px 0 18px 18px;
+  margin: 0;
+  border-left: 1px solid rgba(125, 211, 252, 0.18);
+}
+
+#about .glass-card p:nth-of-type(odd) {
+  background: linear-gradient(90deg, rgba(34, 211, 238, 0.055), transparent 82%);
+  border-radius: 14px;
+}
+
+.glass-card .grid {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(148, 163, 184, 0.14);
+  padding-top: 24px;
+}
+
+#about .glass-card .grid {
+  grid-column: 2;
+  grid-row: 4 / span 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 0 !important;
+  padding-top: 0;
+  border-top: none;
+  position: sticky;
+  top: 110px;
+}
+
+.about-stat {
+  position: relative;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(2, 6, 23, 0.44);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  min-height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-stat::after {
+  content: "";
+  position: absolute;
+  inset: auto 16px 0 16px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan), var(--emerald), var(--amber));
+  opacity: 0.72;
+}
+
+.about-stat:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34, 211, 238, 0.34);
+  background: rgba(8, 47, 73, 0.24);
+}
+
+/* Responsive */
+@media(max-width: 1024px) {
+  #about .glass-card {
+    grid-template-columns: 1fr;
+    padding: 64px 54px;
+  }
+
+  #about .glass-card .grid {
+    grid-column: 1;
+    grid-row: auto;
+    position: relative;
+    top: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 22px !important;
+  }
+}
+
+@media(max-width: 768px) {
+  #about .glass-card {
+    max-width: 100%;
+    padding: 28px 20px;
+  }
+
+  #about .glass-card p {
+    padding: 14px 0 14px 14px;
+  }
+
+  #about .glass-card .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .glass-card {
+    padding: 24px;
+  }
+
+  .about-lead {
+    font-size: 1.05rem;
+  }
+
+  .glass-card::before {
+    display: none;
+  }
+}

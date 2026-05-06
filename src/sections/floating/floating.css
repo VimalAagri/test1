@@ -1,0 +1,163 @@
+/* =========================
+FLOATING ELEMENTS STYLES
+========================= */
+
+/* Cursor */
+.cursor {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--cyan);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: difference;
+}
+
+.cursor-trail {
+  width: 40px;
+  height: 40px;
+  background: rgba(52, 211, 153, 0.12);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 998;
+}
+
+/* Scroll Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00ffff;
+  background: rgba(15, 23, 42, 0.82);
+  color: #00ffff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+  background: #00ffff;
+  color: black;
+}
+
+#scrollTopBtn.hidden {
+  display: none;
+}
+
+/* Social Sidebar */
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 22px;
+  background: rgba(2, 6, 23, 0.6);
+  border: 1px solid;
+  border-color: rgba(34, 211, 238, 0.62);
+  box-shadow: 0 24px 70px rgba(34, 211, 238, 0.12);
+  backdrop-filter: blur(18px);
+  z-index: 1000;
+  overflow: visible;
+}
+
+.social-sidebar .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0 14px;
+  font-size: 22px;
+  color: #e5eefb;
+  background: rgba(15, 23, 42, 0.74);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.social-sidebar .icon i {
+  width: 20px;
+  text-align: center;
+  flex: 0 0 20px;
+}
+
+.social-sidebar .icon span {
+  opacity: 0;
+  transform: translateX(-4px);
+  font-size: 13px;
+  font-weight: 900;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.social-sidebar .icon:hover {
+  width: 132px;
+  transform: translateX(-6px);
+  border-color: rgba(125, 211, 252, 0.36);
+}
+
+.social-sidebar .icon:hover span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.social-sidebar .icon::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(45deg, transparent, rgba(2, 37, 82, 0.938), transparent);
+  transform: rotate(45deg);
+  top: -100%;
+  left: -100%;
+  transition: 0.5s;
+}
+
+.social-sidebar .icon:hover::before {
+  top: 100%;
+  left: 100%;
+}
+
+.social-sidebar .email:hover {
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.22), rgba(15, 23, 42, 0.82));
+  box-shadow: 0 16px 38px rgba(34, 211, 238, 0.16);
+}
+
+.social-sidebar .linkedin:hover {
+  background: linear-gradient(135deg, rgba(10, 102, 194, 0.28), rgba(15, 23, 42, 0.82));
+  box-shadow: 0 16px 38px rgba(10, 102, 194, 0.2);
+}
+
+.social-sidebar .github:hover {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.26), rgba(15, 23, 42, 0.82));
+  box-shadow: 0 16px 38px rgba(167, 139, 250, 0.18);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-sidebar {
+    display: none;
+  }
+  .cursor,
+  .cursor-trail {
+    display: none;
+   }
+}
